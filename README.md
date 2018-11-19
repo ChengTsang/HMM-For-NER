@@ -1,4 +1,4 @@
-Using hidden Markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
+Using hidden markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
 
 ### Core Idea and Algorithm Description
 In the first experiment of this system, we adopt the unigram.  First, we count the number of times that the word appears under different labels in the training data as maximum likelihood estimation. Then, for the x_i in the observation sequence, we find the label with the most number of times as its label in the statistical data. For the label with less occurrence in the training set, the label with the largest number of times is used as its label. For words that appear less or not appear, we will put it all in _rare_, so as to improve the accuracy of recognition. Through HMM's unigram model, we can get the labeled test set, and then compare with the original label of the test set to get the analysis results.
