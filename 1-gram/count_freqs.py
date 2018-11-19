@@ -1,8 +1,4 @@
 #! /usr/bin/python
-
-__author__="Daniel Bauer <bauer@cs.columbia.edu>"
-__date__ ="$Sep 12, 2011"
-
 import sys
 from collections import defaultdict
 import math
