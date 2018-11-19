@@ -10,14 +10,13 @@ Among them * denotes the beginning of a sentence. There are four types of words:
 
 ### Results
 The result below is the unigram model. We could see the result is not well. 
-
-
+<center>
 <img src="https://img-blog.csdnimg.cn/20181119152056911.jpg" width=50% height=50% div align=center/> 
-
+</center>
 But the result for trigram is much better than unigram, results are below:
-
+<center>
 <img src="https://img-blog.csdnimg.cn/2018111915253119.jpg" width=50% height=50% div align=center/> 
-
+</center>
 Compared with the results of experiment 1, the recognition accuracy of Experiment 2 has been greatly improved, from 22% to 76%. Although the recall rate has not been greatly improved, the F1-Score has been doubled.
 
 Specifically, the number of named entities correctly identified in Experiment 1 and Experiment 2 is basically the same, so the recall rate is similar, but experiment 1 mistook a large number of non-named entities for named entities, resulting in low recognition accuracy, which also reflects the defects of the model used in experiment 1.
