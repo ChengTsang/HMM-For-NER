@@ -1,4 +1,4 @@
-﻿Using hidden Markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
+Using hidden Markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
 
 ### Core Idea and Algorithm Description
 In the first experiment of this system, we adopt the unigram.  First, we count the number of times that the word appears under different labels in the training data as maximum likelihood estimation. Then, for the x_i in the observation sequence, we find the label with the most number of times as its label in the statistical data. For the label with less occurrence in the training set, the label with the largest number of times is used as its label. For words that appear less or not appear, we will put it all in _rare_, so as to improve the accuracy of recognition. Through HMM's unigram model, we can get the labeled test set, and then compare with the original label of the test set to get the analysis results.
@@ -10,9 +10,15 @@ Among them * denotes the beginning of a sentence. There are four types of words:
 
 ### Results
 The result below is the unigram model. We could see the result is not well. 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181119152056911.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY3OTQxMQ==,size_16,color_FFFFFF,t_70) 
+
+<center>
+<img src="https://img-blog.csdnimg.cn/20181119152056911.jpg" width=50% height=50% /> 
+<center>
+
 But the result for trigram is much better than unigram, results are below:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018111915253119.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY3OTQxMQ==,size_16,color_FFFFFF,t_70)
+<center>
+<img src="https://img-blog.csdnimg.cn/2018111915253119.jpg" width=50% height=50% /> 
+<center>
 Compared with the results of experiment 1, the recognition accuracy of Experiment 2 has been greatly improved, from 22% to 76%. Although the recall rate has not been greatly improved, the F1-Score has been doubled.
 
 Specifically, the number of named entities correctly identified in Experiment 1 and Experiment 2 is basically the same, so the recall rate is similar, but experiment 1 mistook a large number of non-named entities for named entities, resulting in low recognition accuracy, which also reflects the defects of the model used in experiment 1.
@@ -65,7 +71,6 @@ In the ner_dat, ner_countin the content in ner_train_multiTag.dat, and the examp
 
 #### （4）eval_ne_tagger.py 
 Method for analyzing the  accuracy of experimence. The parameters are the real labels of the test set, and the labels we predict.
-
 
 
 
