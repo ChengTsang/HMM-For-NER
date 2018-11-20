@@ -11,11 +11,11 @@ Among them * denotes the beginning of a sentence. There are four types of words:
 ### Results
 The result below is the unigram model. We could see the result is not well. 
 <div align=center>
-<img src="https://img-blog.csdnimg.cn/2018112010554159.jpg" width=100% height=100% div align=center/> 
+<img src="https://img-blog.csdnimg.cn/2018112010554159.jpg" width=50% height=50% div align=center/> 
 </div align>
 But the result for trigram is much better than unigram, results are below:
 <div align=center>
-<img src="https://img-blog.csdnimg.cn/20181120105557671.jpg" width=100% height=100% div align=center/> 
+<img src="https://img-blog.csdnimg.cn/20181120105557671.jpg" width=50% height=50% div align=center/> 
 </div align>
 Compared with the results of experiment 1, the recognition accuracy of Experiment 2 has been greatly improved, from 22% to 76%. Although the recall rate has not been greatly improved, the F1-Score has been doubled.
 
