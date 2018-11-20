@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/language-python-blue.svg) 
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
-[![codebeat badge](https://codebeat.co/badges/eb5b0dcc-dc34-4c1d-8f74-f243bcf8694f)]
+![codebeat badge](https://codebeat.co/badges/eb5b0dcc-dc34-4c1d-8f74-f243bcf8694f)
 
 Using hidden markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
 
