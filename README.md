@@ -11,7 +11,7 @@ Among them * denotes the beginning of a sentence. There are four types of words:
 ### Results
 The result below is the unigram model. We could see the result is not well. 
 <center>
-<img src="https://img-blog.csdnimg.cn/20181119152056911.jpg" width=50% height=50% div align=center/> 
+<img src="https://img-blog.csdnimg.cn/2018112010554159.jpg" width=50% height=50% div align=center/> 
 </center>
 But the result for trigram is much better than unigram, results are below:
 <center>
