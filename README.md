@@ -1,6 +1,6 @@
 ## <center>HMM Model in NER</center>
 
-![](https://img.shields.io/badge/language-python-green.svg) 
+![](https://img.shields.io/badge/language-python-blue.svg) 
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 
 Using hidden markov model (HMM) to construct a Chinese NER tagging program, and test the accuracy of our tagging method on the test set.
